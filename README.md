@@ -18,3 +18,6 @@ Installing tools
 -> https://docs.python.org/2/howto/urllib2.html
 2.html parsing
 -> https://docs.python.org/3/library/html.parser.html
+
+
+The problem seems to be that extract tool be required.
