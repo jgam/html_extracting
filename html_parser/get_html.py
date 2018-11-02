@@ -4,7 +4,7 @@ import urllib.request
 
 #req = urllib2.Request('http://www.zdnet.co.kr/news/news_view.asp?artice_id=20180226164407')
 #url = 'http://www.zdnet.co.kr/news/news_view.asp?artice_id=20180226164407'
-url = "http://www.zdnet.co.kr"
+url = "http://www.google.com"
 request = urllib.request.Request(url)
 response = urllib.request.urlopen(request)
 the_page = response.read()
