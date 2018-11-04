@@ -19,10 +19,25 @@ Installing tools
 2.html parsing
 -> https://docs.python.org/3/library/html.parser.html
 
+3. get_html.py
+-> using urllib to get the page of url and save it to some variables
 
-The problem seems to be that extract tool be required.
+4. bsoup.py
+-> basic check installation of beautifulsoup and see if it actually works
+-> need to implement this with #3 so that I can combine the two functionalities together
+
+5. contents.py
+-> combining #3 & #4. Now able to scrape Korean webiste and contents only.
+
+6. Konlpy
+-> installed Konlpy by doing : pip3 install konlpy
+***Make sure to use pip3, NOT pip!***
+
+7. outputs
+-> outputs are saved as outputs. I was able to differentiate noun(?) using the tools but not sure.
+
 
 Tomorrow Task:
--dragnet required how to use!
+-dragnet required how to use! (don't need but still need to look at it!)
 
 setting up the local environment
