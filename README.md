@@ -35,7 +35,7 @@ Installing tools
 
 7. outputs
 -> outputs are saved as outputs. I was able to differentiate noun(?) using the tools but not sure.
-
+*useful linke: https://m.blog.naver.com/rjs5730/220981013264*
 
 Tomorrow Task:
 -dragnet required how to use! (don't need but still need to look at it!)
