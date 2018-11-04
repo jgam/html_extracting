@@ -14,4 +14,7 @@ and they lived at the bottom of a well.</p>
 """
 soup = BeautifulSoup(html_doc, 'html.parser')
 
-print(soup.prettify())
+#print(soup.prettify())
+print(soup.title)
+print(soup.head)
+soup.find("div", {"id": "contents"})
