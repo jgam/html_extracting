@@ -5,6 +5,9 @@
 -> using the command at ~/.bash_profile : "alias ~"
 2. install python on ubuntu
 -> still need to do this!
+-> just updated ~/.profile and added the following line:
+alias python=python3#and now python is version 3.5.2
+
 3. git repository copy.
 4. install pip and other packages
 ->sudo apt install python-pip
