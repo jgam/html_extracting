@@ -16,3 +16,4 @@ I fetched html_extractor from ascentnetworks git by copying necessary folders to
 2. install python
 3. git repository copy.
 >>>>>>> 2ffe952e6b491d04084f36437eb00c3e938faa51
+the problem still is that we don't have htmlEx(pyenv) synched!
