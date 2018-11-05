@@ -1,6 +1,7 @@
 #'html_extracting moduel' configured a lm-module
 
 1. ssh-module
+<<<<<<< HEAD
 -> using the command at ~/.bash_profile : "alias ~"
 2. install python on ubuntu
 -> still need to do this!
@@ -11,3 +12,7 @@
 
 
 I fetched html_extractor from ascentnetworks git by copying necessary folders to the account.
+=======
+2. install python
+3. git repository copy.
+>>>>>>> 2ffe952e6b491d04084f36437eb00c3e938faa51
