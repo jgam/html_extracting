@@ -20,3 +20,31 @@ I fetched html_extractor from ascentnetworks git by copying necessary folders to
 3. git repository copy.
 >>>>>>> 2ffe952e6b491d04084f36437eb00c3e938faa51
 the problem still is that we don't have htmlEx(pyenv) synched!
+
+
+selenium
+sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
+
+install google chrome
+sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add && sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list && sudo apt-get -y update && sudo apt-get -y install google-chrome-stable
+
+install chromedriver
+wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip && unzip chromedriver_linux64.zip
+
+sudo mv chromedriver /usr/bin/chromedriver && sudo chown root:root /usr/bin/chromedriver && sudo chmod +x /usr/bin/chromedriver
+
+stopped at getting apt-get install google-chrome
+
+
+after googlechrome, you need to install knolpy and jvm
+
+install konlpy
+install jvm
+*download jvm and scp to the server to unzip the zipped file
+
+setting the language
+website : https://help.accusoft.com/PrizmDoc/v12.2/HTML/Installing_Asian_Fonts_on_Ubuntu_and_Debian.html
+japanese : https://blog.amedama.jp/entry/2017/03/10/210552
+
+follow the instructions and good to go.
+
