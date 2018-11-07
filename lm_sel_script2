@@ -1,0 +1,44 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+
+search_lists = []
+current_url_lists=[]
+
+for i in range(0, 27):
+	name = input()
+	search_lists.append(name)
+#search_lists = ['Dormy Inn Premium Namba Natural Hot Spring익스피디아']
+driver = webdriver.Chrome('/Users/ascent/Downloads/chromedriver')
+
+for s_url in search_lists:
+	url_driver = 'https://www.google.com/search?q='+s_url.replace(" ", "+")
+	driver.get(url_driver)
+	#selector = '#rso > div > div > div:nth-child('+str(i)+') > div > div > div.r > a:nth-child(1) > div > cite'
+	#print('selector is : ', selector)
+	driver.implicitly_wait(1)
+	expedia_kr = driver.find_elements_by_css_selector('#rso > div > div > div > div > div > div > a')
+	#print('the type of expedia_kr :', type(expedia_kr))
+	#print('the expedia_kr is : ',expedia_kr)
+		#selector?
+		##rso > div > div > div:nth-child(1) > div > div > div.r > a:nth-child(1) > div > cite
+		##rso > div > div > div:nth-child(2) > div > div > div.r > a:nth-child(1) > div > cite
+
+#print('expedia_kr text is ; ', expedia_kr.text)
+	time.sleep(1)
+	for i in expedia_kr:
+		final_url = i.get_attribute("href")
+		if final_url.startswith("https://www.expedia.co.kr"):
+			current_url_lists.append(final_url)
+			break
+		else:
+			continue
+	#print(i.text)
+	#print(i.get_attribute("href"))
+	#print(type(i.get_attribute("href")))
+	#current_url_lists.append(driver.current_url)
+
+print(current_url_lists)
+with open('output2', mode='wt', encoding='utf-8') as myfile:
+    myfile.write('\n'.join(current_url_lists))
